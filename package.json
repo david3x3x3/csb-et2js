@@ -1,0 +1,17 @@
+{
+  "name": "eternity2",
+  "version": "1.0.0",
+  "description": "A program to search for Eternity 2 puzzle solutions",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "David Barr",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0"
+  }
+}
