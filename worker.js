@@ -100,7 +100,7 @@ function printBoard(board) {
 var procs = [];
 for(var i=0; i<256; i++) {
     var src = `// cell ${i}\n`;
-    src += `    if (++nodes % 4000000 == 0) {\n`;
+    src += `    if (++nodes % 2000000 == 0) {\n`;
     src += `        msg = {};\n`;
     src += `        msg["type"] = "progress";\n`;
     src += `        msg["nodes"] = nodes;\n`;
@@ -170,7 +170,7 @@ for(var i=0; i<256; i++) {
     src += `    }\n`;
     src += `}\n`;
     src += `return false;\n`;
-    console.log(`proc ${i}:\n${src}`);
+    // console.log(`proc ${i}:\n${src}`);
     procs.push(Function(src));
 }
                
